@@ -1,0 +1,12 @@
+<p>student-information</p>
+<form #information="ngForm"  (ngSubmit)="student(information)">
+student name : <input type="text"  name="studentname" ngModel size="20"  minlength="5" required> <br/>
+
+  mathes : <input type="text"   ngModel name ="mathes"><br/>
+  english : <input type="text"  nggmodel name="english"><br/>
+  sci : <input type="text"   ngmodel name="sci"><br/>
+
+  <input type="reset" value="clear">
+  <input type="submit" value="sumbit">
+
+</form>
