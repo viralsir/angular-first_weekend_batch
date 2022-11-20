@@ -1,0 +1,9 @@
+<h3>{{msg}}</h3>
+<form #loginformRef="ngForm"  (ngSubmit)="checkuser(loginformRef)">
+      User Name : <input type="text"  name="username" ngModel size="20"  minlength="5" required> <br/>
+ (username must be 5 character long )<br/>     Password : <input type="password" name="password" ngModel size="20" required>
+   <br/>
+  <input type="submit" value="Login" [disabled]="loginformRef.invalid" >
+  <input type="reset" value="Clear">
+</form>
+
